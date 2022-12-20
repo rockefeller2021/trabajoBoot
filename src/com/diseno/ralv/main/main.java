@@ -4,22 +4,21 @@ public class main {
 
     public static void main(String[] args) {
 
-        System.out.println("Entraga de trabajo");
+       System.out.println("Hello World");
 
-        int numero = 1;
-        long numLong = 12345678;
-        double numDouble = 25.5;
-        boolean bool = false;
-        String palabra = "Hola mundo";
-
-
-        System.out.println("Entero es :" + numero +
-                           "\nLong es: " + numLong  +
-                           "\nDoble es: " + numDouble +
-                           " \nBoolenano es: " + bool +
-                           "\nCadema es : " + palabra);
-
+       double precioNormal = 100.0;
+       System.out.println("El precio unitario es " + precioNormal);
+        System.out.println("El precio con Iva es: " + getPrecio(100));
 
     }
 
+    static double getPrecio(double precio){
+        double iva = 0.19;
+        return precio + (precio * iva);
+
+    }
+
+
 }
+
+
